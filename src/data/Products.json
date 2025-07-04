@@ -1,0 +1,72 @@
+[
+  {
+    "id": "prod1",
+    "name": "Classic White T-Shirt",
+    "description": "A timeless white t-shirt made from 100% organic cotton. Perfect for everyday wear.",
+    "price": 25.00,
+    "imageUrl": "/images/tshirt_white.jpg"
+  },
+  {
+    "id": "prod2",
+    "name": "Comfy Denim Jeans",
+    "description": "Durable and stylish denim jeans with a comfortable fit. Available in various sizes.",
+    "price": 65.00,
+    "imageUrl": "/images/jeans_denim.jpg"
+  },
+  {
+    "id": "prod3",
+    "name": "Elegant Leather Wallet",
+    "description": "Handcrafted leather wallet with multiple card slots and a coin pouch. A perfect gift.",
+    "price": 40.00,
+    "imageUrl": "/images/wallet_leather.jpg"
+  },
+  {
+    "id": "prod4",
+    "name": "Wireless Noise-Cancelling Headphones",
+    "description": "Immerse yourself in music with crystal-clear audio and active noise cancellation.",
+    "price": 120.00,
+    "imageUrl": "/images/headphones.jpg"
+  },
+  {
+    "id": "prod5",
+    "name": "Minimalist Smartwatch",
+    "description": "Track your fitness, receive notifications, and more with this sleek and modern smartwatch.",
+    "price": 150.00,
+    "imageUrl": "/images/smartwatch.jpg"
+  },
+  {
+    "id": "prod6",
+    "name": "Portable Bluetooth Speaker",
+    "description": "Compact and powerful speaker with rich sound and long battery life. Perfect for outdoor adventures.",
+    "price": 80.00,
+    "imageUrl": "/images/speaker_bluetooth.jpg"
+  },
+  {
+    "id": "prod7",
+    "name": "Ergonomic Office Chair",
+    "description": "Designed for maximum comfort and support during long working hours. Adjustable features.",
+    "price": 200.00,
+    "imageUrl": "/images/office_chair.jpg"
+  },
+  {
+    "id": "prod8",
+    "name": "Stainless Steel Water Bottle",
+    "description": "Keep your drinks hot or cold for hours with this durable and eco-friendly water bottle.",
+    "price": 18.00,
+    "imageUrl": "/images/water_bottle.jpg"
+  },
+  {
+    "id": "prod9",
+    "name": "Cozy Knitted Blanket",
+    "description": "Soft and warm knitted blanket, perfect for snuggling on the couch on a cold evening.",
+    "price": 50.00,
+    "imageUrl": "/images/blanket_knitted.jpg"
+  },
+  {
+    "id": "prod10",
+    "name": "Classic Paperback Novel",
+    "description": "A best-selling novel that will keep you engrossed from start to finish. A great read.",
+    "price": 15.00,
+    "imageUrl": "/images/book_novel.jpg"
+  }
+]
