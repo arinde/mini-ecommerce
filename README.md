@@ -32,7 +32,7 @@ Rounded Corners: Applied generously to UI elements like buttons, cards, and inpu
 
 Accessibility (A11y):
 
-Semantic HTML: Proper HTML5 semantic tags (<header>, <nav>, <main>, <section>, <h1> through <h3>, <button>, <label>, <select>) are used to provide a clear document structure for assistive technologies.
+Semantic HTML: Proper HTML5 semantic tags like <header>, <nav>, <main>, <section>, <h1> through <h3>, <button>, <label>, and <select> are used to provide a clear document structure for assistive technologies.
 
 Image Alt Text: All next/image components include descriptive alt attributes for screen reader users.
 
@@ -165,7 +165,9 @@ Installation
 Clone the Repository:
 First, clone the project repository to your local machine using Git:
 
-git clone https://github.com/arinde/mini-ecommerce.git
+git clone <YOUR_REPOSITORY_URL_HERE>
+
+Replace <YOUR_REPOSITORY_URL_HERE> with the actual URL of your GitHub repository.
 
 Navigate to the Project Directory:
 Change into the newly created project directory:
