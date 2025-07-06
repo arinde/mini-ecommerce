@@ -1,9 +1,11 @@
 'use client'
-
 import { useQuery } from '@tanstack/react-query';
-import { fetchProductById, Product} from '../../../lib/productService'
+import { fetchProductById, Product} from '../../../lib/productService';
+import { useCartStore } from '../../../lib/cartStore';
 import Image from 'next/image';
 import Link from 'next/link';
+import toast from 'react-hot-toast';
+
 
 interface ProductDetailPageProps {
     params: {
@@ -19,6 +21,22 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     queryFn: () => fetchProductById(productId), 
     enabled: !!productId,
   });
+
+  const addToCart = useCartStore((state) => state.addToCart);
+  const getTotalItems = useCartStore((state) => state.getTotalItems());
+
+  const handleAddToCart = () => {
+    if (product) {
+      try {
+        addToCart(product);
+        toast.success('Successfully Added to Cart!');
+        console.log(`${product.name} added to cart!`);
+      } catch (error) {
+        console.error("Failed to add to cart:", error);
+        toast.error('Could not add item to cart. Please try again.');
+    }
+  };
+}
 
   if (isLoading) {
     return (
@@ -71,8 +89,11 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           <p className="text-2xl font-bold text-blue-700 mb-4">${product.price.toFixed(2)}</p>
           <p className="text-gray-700 leading-relaxed mb-6">{product.description}</p>
 
-          {/* Placeholder for Add to Cart button */}
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out">
+          
+          <button
+            onClick={handleAddToCart}
+            className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out"
+          >
             Add to Cart
           </button>
         </div>
