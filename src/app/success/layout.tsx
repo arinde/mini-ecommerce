@@ -10,7 +10,7 @@ interface SuccessLayoutProps {
   children: React.ReactNode;
 }
 
-export default function SuccessLayout({ children }: CartLayoutProps) {
+export default function SuccessLayout({ children }: SuccessLayoutProps) {
   return (
     <>
       {children}
