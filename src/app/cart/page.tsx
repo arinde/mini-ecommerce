@@ -25,7 +25,7 @@ export default function CartPage() {
 
   return (
     <main className="container mx-auto p-4 md:p-8 max-w-3xl">
-      <h1 className="text-4xl font-bold mb-8 text-center">Your Shopping Cart ({totalItems} items)</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center pt-28">Your Shopping Cart ({totalItems} items)</h1>
 
       {items.length === 0 ? (
         <div className="text-center py-10">
@@ -50,21 +50,21 @@ export default function CartPage() {
                   <h2 className="text-xl font-semibold text-gray-800">{item.name}</h2>
                   <p className="text-gray-600">${item.price.toFixed(2)}</p>
                 </div>
-                <div className="flex items-center">
+                <div className="flex md:flex-row flex-col gap-y-3 md:items-center">
                   <label htmlFor={`quantity-${item.id}`} className="sr-only">Quantity for {item.name}</label>
                   <select
                     id={`quantity-${item.id}`}
                     value={item.quantity}
                     onChange={(e) => handleQuantityChange(item.id, e)}
-                    className="border rounded-md p-2 w-20 text-center mr-4"
+                    className="border rounded-md p-2 w-20 text-center md:mr-4"
                   >
-                    {[...Array(10).keys()].map((i) => ( // Options for 1 to 10
+                    {[...Array(10).keys()].map((i) => (
                       <option key={i + 1} value={i + 1}>{i + 1}</option>
                     ))}
                   </select>
                   <button
                     onClick={() => handleRemoveFromCart(item.id)}
-                    className="bg-red-500 hover:bg-red-600 text-white py-2 px-3 rounded-lg text-sm"
+                    className="bg-red-500 hover:bg-red-600 text-white py-2 md:px-3 px-0 rounded-lg text-sm"
                   >
                     Remove
                   </button>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useCartStore } from '../../lib/cartStore';
 import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
 
 export default function CheckoutPage() {
   const items = useCartStore((state) => state.items);
@@ -13,7 +14,7 @@ export default function CheckoutPage() {
 
   if (items.length === 0) {
     return (
-      <div className="container mx-auto p-4 md:p-8 max-w-xl text-center">
+      <div className="container mx-auto p-4 md:p-8 max-w-xl text-center pt-28">
         <h1 className="text-3xl font-bold mb-4">Your cart is empty!</h1>
         <p className="text-lg text-gray-600 mb-6">Please add some items before checking out.</p>
         <Link href="/" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">
@@ -25,7 +26,7 @@ export default function CheckoutPage() {
 
   const handlePlaceOrder = () => {
     clearCart();
-
+    toast.success('order placed successfully')
     const orderId = `MC-${Math.random().toString(36).substring(2, 10).toUpperCase()}`;
 
     router.push(`/success?orderId=${orderId}`);
@@ -33,7 +34,7 @@ export default function CheckoutPage() {
 
   return (
     <main className="container mx-auto p-4 md:p-8 max-w-3xl">
-      <h1 className="text-4xl font-bold mb-8 text-center">Order Summary</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center pt-28">Order Summary</h1>
 
       <div className="bg-white border rounded-lg p-6 shadow-md mb-8">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-3">Items in Your Order</h2>
@@ -50,7 +51,7 @@ export default function CheckoutPage() {
                 />
                 <span>{item.name} (x{item.quantity})</span>
               </div>
-              <span>${(item.price * item.quantity).toFixed(2)}</span>
+              <span className='font-semibold'>${(item.price * item.quantity).toFixed(2)}</span>
             </div>
           ))}
         </div>

@@ -70,7 +70,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   }
 
   return (
-    <main className="container mx-auto p-6 max-w-4xl">
+    <main className="container mx-auto p-6 pt-28 max-w-4xl">
       <Link href="/" className="text-blue-500 hover:underline mb-4 inline-block">
         &larr; Back to Catalogue
       </Link>
@@ -81,12 +81,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             alt={product.name}
             width={400}
             height={400}
-            className="w-full h-auto object-contain rounded-lg shadow-md"
+            className="w-full object-contain rounded-lg shadow-md"
           />
         </div>
         <div className="md:w-1/2">
-          <h1 className="text-4xl font-extrabold mb-3 text-gray-900">{product.name}</h1>
-          <p className="text-2xl font-bold text-blue-700 mb-4">${product.price.toFixed(2)}</p>
+          <h1 className="md:text-4xl text-3xl font-extrabold mb-3 text-gray-900">{product.name}</h1>
+          <p className="md:text-2xl text-xl font-bold text-blue-700 mb-4">${product.price.toFixed(2)}</p>
           <p className="text-gray-700 leading-relaxed mb-6">{product.description}</p>
 
           
