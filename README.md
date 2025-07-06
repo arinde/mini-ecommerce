@@ -30,8 +30,6 @@ Animations: Framer Motion is selectively used for subtle entry animations on the
 
 Accessibility (A11y):
 
-Semantic HTML: Proper HTML5 semantic tags like <body>, <header>, <nav>, <main>, <section>, <h1> through <h3>, <button>, <label>, and <select> are used to create a logical document structure, improving navigation for assistive technologies.
-
 Image Alt Text: All next/image components include descriptive alt attributes, crucial for screen readers.
 
 Keyboard Navigation: All interactive elements are designed to be fully navigable and operable using only the keyboard (Tab, Enter, Spacebar).
@@ -168,8 +166,6 @@ Clone the Repository:
 First, clone the project repository to your local machine using Git:
 
 git clone [https://github.com/arinde/mini-ecommerce.git](https://github.com/arinde/mini-ecommerce.git)
-
-Replace https://github.com/arinde/mini-ecommerce.git with the actual URL of your GitHub repository.
 
 Navigate to the Project Directory:
 Change into the newly created project directory:
