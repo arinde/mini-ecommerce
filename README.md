@@ -30,13 +30,13 @@ Animations: Framer Motion is selectively used for subtle entry animations on the
 
 Accessibility (A11y):
 
-Semantic HTML: Proper HTML5 semantic tags (<header>, <nav>, <main>, <section>, <h1> through <h3>, <button>, <label>, <select>) are used to create a logical document structure, improving navigation for assistive technologies.
+Semantic HTML: Proper HTML5 semantic tags like <body>, <header>, <nav>, <main>, <section>, <h1> through <h3>, <button>, <label>, and <select> are used to create a logical document structure, improving navigation for assistive technologies.
 
 Image Alt Text: All next/image components include descriptive alt attributes, crucial for screen readers.
 
 Keyboard Navigation: All interactive elements are designed to be fully navigable and operable using only the keyboard (Tab, Enter, Spacebar).
 
-Form Labels: Input fields are correctly associated with <label> tags using htmlFor for enhanced usability and accessibility.
+Form Labels: Input fields (like quantity selectors) are correctly associated with <label> tags using htmlFor for enhanced usability and accessibility.
 
 Tools & Techniques
 The project strictly adheres to the specified technology stack and incorporates modern React development patterns for robustness and maintainability.
@@ -101,6 +101,60 @@ Conditional Rendering: Pages like the Cart and Checkout intelligently check for 
 
 Event Handler Error Management: Standard JavaScript try...catch blocks are used within event handlers (e.g., "Add to Cart" clicks) to gracefully manage potential errors during user interactions, preventing unexpected failures and ensuring a smoother experience.
 
+tsconfig.json & ESLint Configurations
+The project is configured with strict typing and robust code quality rules to ensure maintainability and prevent common errors.
+
+tsconfig.json:
+
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true, // Enforces strict type checking
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+
+"strict": true: This is the core setting that enables all strict type-checking options in TypeScript. It ensures that variables are properly typed, null/undefined are handled explicitly, and any is discouraged.
+
+"noEmit": true: Prevents TypeScript from emitting JavaScript files, relying on Next.js for compilation.
+
+"isolatedModules": true: Ensures that each file can be compiled independently, which is important for build tools like Babel or SWC.
+
+.eslintrc.json:
+The ESLint configuration, derived from eslint-config-next, ensures adherence to best practices and catches common issues.
+
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    // Custom rules can be added here, e.g.:
+    // "react/no-unescaped-entities": "off",
+    // "@next/next/no-img-element": "off"
+  }
+}
+
+"extends": ["next/core-web-vitals"]: This extends the recommended ESLint configuration from Next.js, which includes rules for React, Next.js specifics, and Web Vitals best practices.
+
+This setup ensures that code is consistently formatted, potential bugs are flagged early, and the codebase remains clean and maintainable.
+
 Getting Started (Local Development)
 Follow these steps to set up and run the NexusMart project on your local machine.
 
@@ -113,7 +167,7 @@ Installation
 Clone the Repository:
 First, clone the project repository to your local machine using Git:
 
-git clone https://github.com/arinde/mini-ecommerce.git
+git clone [https://github.com/arinde/mini-ecommerce.git](https://github.com/arinde/mini-ecommerce.git)
 
 Replace https://github.com/arinde/mini-ecommerce.git with the actual URL of your GitHub repository.
 
