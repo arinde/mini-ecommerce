@@ -4,69 +4,69 @@
     "name": "Classic White T-Shirt",
     "description": "A timeless white t-shirt made from 100% organic cotton. Perfect for everyday wear.",
     "price": 25.00,
-    "imageUrl": "/Images/tshirt_white.jfif"
+    "imageUrl": "/Images/tshirt_white.png"
   },
   {
     "id": "prod2",
     "name": "Comfy Denim Jeans",
     "description": "Durable and stylish denim jeans with a comfortable fit. Available in various sizes.",
     "price": 65.00,
-    "imageUrl": "/Images/jeans_denim.jfif"
+    "imageUrl": "/Images/jeans_denim.png"
   },
   {
     "id": "prod3",
     "name": "Elegant Leather Wallet",
     "description": "Handcrafted leather wallet with multiple card slots and a coin pouch. A perfect gift.",
     "price": 40.00,
-    "imageUrl": "/Images/wallet_leather.jfif"
+    "imageUrl": "/Images/wallet_leather.png"
   },
   {
     "id": "prod4",
     "name": "Wireless Noise-Cancelling Headphones",
     "description": "Immerse yourself in music with crystal-clear audio and active noise cancellation.",
     "price": 120.00,
-    "imageUrl": "/Images/headphones.jfif"
+    "imageUrl": "/Images/headphones.png"
   },
   {
     "id": "prod5",
     "name": "Minimalist Smartwatch",
     "description": "Track your fitness, receive notifications, and more with this sleek and modern smartwatch.",
     "price": 150.00,
-    "imageUrl": "/Images/smartwatch.jfif"
+    "imageUrl": "/Images/smartwatch.png"
   },
   {
     "id": "prod6",
     "name": "Portable Bluetooth Speaker",
     "description": "Compact and powerful speaker with rich sound and long battery life. Perfect for outdoor adventures.",
     "price": 80.00,
-    "imageUrl": "/Images/speaker_bluetooth.jfif"
+    "imageUrl": "/Images/speaker_bluetooth.png"
   },
   {
     "id": "prod7",
     "name": "Ergonomic Office Chair",
     "description": "Designed for maximum comfort and support during long working hours. Adjustable features.",
     "price": 200.00,
-    "imageUrl": "/Images/office_chair.jfif"
+    "imageUrl": "/Images/office_chair.png"
   },
   {
     "id": "prod8",
     "name": "Stainless Steel Water Bottle",
     "description": "Keep your drinks hot or cold for hours with this durable and eco-friendly water bottle.",
     "price": 18.00,
-    "imageUrl": "/Images/water_bottle.jfif"
+    "imageUrl": "/Images/water_bottle.png"
   },
   {
     "id": "prod9",
     "name": "Cozy Knitted Blanket",
     "description": "Soft and warm knitted blanket, perfect for snuggling on the couch on a cold evening.",
     "price": 50.00,
-    "imageUrl": "/Images/blanket_knitted.jfif"
+    "imageUrl": "/Images/blanket_knitted.png"
   },
   {
     "id": "prod10",
     "name": "Classic Paperback Novel",
     "description": "A best-selling novel that will keep you engrossed from start to finish. A great read.",
     "price": 15.00,
-    "imageUrl": "/Images/book_novel.jfif"
+    "imageUrl": "/Images/book_novel.png"
   }
 ]
